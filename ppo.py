@@ -228,7 +228,7 @@ def main(population=5, max_episodes=10000, lr=0.005, max=0, random=False):
 
                 # Running policy_old:
                 a = ppo.policy_old.act(state, memory)
-                a = a.detach().numpy()
+                a = a.cpu().detach().numpy()
 
                 # seperate location and message
                 loc = a[:2]
