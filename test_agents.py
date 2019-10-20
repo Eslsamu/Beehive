@@ -1,4 +1,4 @@
-from run import Sim
+from grid import Grid
 import numpy as np
 
 
@@ -20,7 +20,7 @@ def act(policy, messages,obs):
 	pass
 
 def test():
-	sim = Sim()
+	sim = Grid()
 
 	n_agents = 5
 
